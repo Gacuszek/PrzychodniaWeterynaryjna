@@ -44,7 +44,7 @@ Aplikacja służy do zarządzania klientami oraz ich zwierzętami w ramach małe
 
 1. **Sklonuj repozytorium**:
    ```bash
-   git clone https://github.com/makswes/przychodnia_weterynaryja.git
+   git clone https://github.com/Gacuszek/PrzychodniaWeterynaryjna
    ```
 
 2. **Otwórz projekt w Visual Studio**.
