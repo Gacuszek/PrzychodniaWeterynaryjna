@@ -1,78 +1,81 @@
-# 🐾 Przychodnia Weterynaryjna – Aplikacja Desktopowa
+# 🐾 Przychodnia Weterynaryjna – Aplikacja WinForms w C#
 
-## 📌 Temat i cel biznesowy aplikacji
-
-Aplikacja służy do zarządzania klientami oraz ich zwierzętami w ramach małej przychodni weterynaryjnej. Umożliwia szybki dostęp do danych, ich edycję oraz prowadzenie rejestru pacjentów bez konieczności używania dokumentacji papierowej.
-
----
-
-## 🛠 Użyte technologie
-
-- **Język programowania**: C#
-- **Framework**: .NET Framework
-- **GUI**: Windows Forms
-- **Baza danych**: Microsoft Access (`Dane.accdb`)
-- **Biblioteki**: ADO.NET (`System.Data.OleDb`)
+## 🎯 Cel projektu
+Aplikacja desktopowa do zarządzania przychodnią weterynaryjną. Umożliwia prowadzenie ewidencji lekarzy, klientów, ich zwierząt oraz historii wizyt. Projekt został zrealizowany w języku C# z zastosowaniem paradygmatu obiektowego.
 
 ---
 
-## 🧩 Funkcjonalności
-
-### 👤 Klienci
-- Dodawanie nowych klientów
-- Edycja danych klientów
-- Usuwanie klientów
-
-### 🐶 Zwierzęta
-- Dodawanie zwierząt do klientów
-- Wyświetlanie listy zwierząt
-- Usuwanie zwierząt
-
-### 🔎 Wyszukiwanie i nawigacja
-- Przejrzysty interfejs oparty o formularze
-- Powiązanie klient–zwierzę
+## 🛠 Technologie
+- **Język programowania:** C#
+- **Interfejs użytkownika:** WinForms
+- **Baza danych:** Microsoft Access (.accdb)
+- **Dostęp do bazy:** ADO.NET (OleDb)
+- **Kontrola wersji:** Git + GitHub
+- **IDE:** Visual Studio
 
 ---
 
-## 📷 Zrzuty ekranu
+## 📦 Struktura projektu
+- `Form1.cs` – główne okno aplikacji (GUI)
+- `DataAccess.cs` – warstwa komunikacji z bazą danych
+- `PrzychodniaService.cs` – logika aplikacyjna
+- `*.cs` (Klient, LekarzWeterynarii, Zwierze, Wizyta) – klasy modelowe
+- `IHasContactInfo.cs` – interfejs do obsługi danych kontaktowych
+- `Przychodnia.accdb` – baza danych w formacie Access
 
+---
+
+## ✅ Funkcjonalności
+- Zarządzanie **lekarzami weterynarii** (dodawanie, edycja, usuwanie)
+- Obsługa **klientów i ich zwierząt**
+- Dodawanie i przeglądanie **wizyt pacjentów** z pełną dokumentacją:
+  - opis, diagnoza, badania, leki, zalecenia, koszty
+- Interfejs graficzny z formularzami i kontrolkami
+- Dane przechowywane lokalnie w bazie Access
+
+---
+
+## 🧠 Programowanie obiektowe (OOP)
+
+| Element            | Zastosowanie                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| **Dziedziczenie**  | `Klient` i `LekarzWeterynarii` dziedziczą po klasie `Osoba`                  |
+| **Interfejsy**     | `IHasContactInfo` implementowany przez `Klient` i `Lekarz`                   |
+| **Polimorfizm**    | Obsługa wspólnego interfejsu do wyświetlania kontaktów                      |
+| **Hermetyzacja**   | Wszystkie właściwości są `public` z `get; set;`                              |
+| **Biblioteki**     | `System.Data.OleDb`, `System.Windows.Forms`, `System.Collections.Generic`   |
+
+---
+
+## 🖼 Zrzuty ekranu
+_(Dodaj w repo obrazy GUI, np. `screenshots/form_main.png`)_
+
+---
+
+## 🗂 Diagram klas UML
+![diagram_uml](https://github.com/user-attachments/assets/9405d791-0d26-41a4-bf7a-f0bdff125292)
 
 
 ---
 
-## ⚙️ Instalacja i uruchomienie
+## 🚀 Instalacja i uruchomienie
 
-1. **Sklonuj repozytorium**:
+1. Sklonuj repozytorium:
    ```bash
-   git clone https://github.com/Gacuszek/PrzychodniaWeterynaryjna
+   git clone https://github.com/Gacuszek/PrzychodniaWeterynaryjna.git
    ```
-
-2. **Otwórz projekt w Visual Studio**.
-
-3. **Upewnij się, że plik `Dane.accdb` znajduje się w folderze projektu.**
-
-4. **Zbuduj i uruchom aplikację (`F5`).**
+2. Otwórz plik `.sln` w Visual Studio
+3. Upewnij się, że plik `Przychodnia.accdb` znajduje się w katalogu projektu
+4. Naciśnij **F5** lub uruchom projekt z poziomu Visual Studio
 
 ---
 
-## 🧱 Architektura i paradygmat obiektowy
-
-Projekt opiera się na zasadach programowania obiektowego:
-
-### 📦 Klasy i ich odpowiedzialności
-
-- `Klient` – dane kontaktowe właściciela
-- `Zwierze` – dane o zwierzęciu
-- `DataAccess` – operacje na bazie danych
-- Formularze `Form1`, `MainForm`, `KlienciForm`, itp. – logika UI
-
-### 🧠 Zasady OOP:
-- **Enkapsulacja** – dane przechowywane jako właściwości, dostęp przez metody
-- **Modularność** – każda forma i klasa odpowiada za jeden obszar funkcjonalności
-- **Separacja warstw** – interfejs użytkownika oddzielony od logiki bazy danych
+## 👨‍💻 Autorzy
+Projekt zrealizowany w ramach kursu programowania obiektowego.  
+## Tomasz Gackowski
+## Rafał Soja
 
 ---
 
 ## 📄 Licencja
-
-Projekt dostępny na licencji MIT.
+Projekt udostępniony na licencji MIT – możesz używać, modyfikować i rozpowszechniać.
