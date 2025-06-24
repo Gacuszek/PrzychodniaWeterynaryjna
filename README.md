@@ -72,8 +72,9 @@ _(Dodaj w repo obrazy GUI, np. `screenshots/form_main.png`)_
 
 ## 👨‍💻 Autorzy
 Projekt zrealizowany w ramach kursu programowania obiektowego.  
-## Tomasz Gackowski
-## Rafał Soja
+- Tomasz Gackowski
+- Rafał Soja
+- Maksymilian Wesolik
 
 ---
 
