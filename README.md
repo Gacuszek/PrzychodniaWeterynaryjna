@@ -48,7 +48,11 @@ Aplikacja desktopowa do zarządzania przychodnią weterynaryjną. Umożliwia pro
 ---
 
 ## 🖼 Zrzuty ekranu
-_(Dodaj w repo obrazy GUI, np. `screenshots/form_main.png`)_
+![1](https://github.com/user-attachments/assets/bfb390bb-9723-49d7-932b-ae6656fc13e0)
+![2](https://github.com/user-attachments/assets/9c201f60-3a81-48e7-af1c-71d7d7014935)
+![3](https://github.com/user-attachments/assets/5187d9b6-e3b3-485a-88f4-fe66d72dec6b)
+![4](https://github.com/user-attachments/assets/6c11be1c-61c5-4c8c-9553-5937bc1b7c42)
+
 
 ---
 
