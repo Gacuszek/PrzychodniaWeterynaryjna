@@ -20,7 +20,7 @@ Aplikacja desktopowa do zarządzania przychodnią weterynaryjną. Umożliwia pro
 - `DataAccess.cs` – warstwa komunikacji z bazą danych
 - `PrzychodniaService.cs` – logika aplikacyjna
 - `*.cs` (Klient, LekarzWeterynarii, Zwierze, Wizyta) – klasy modelowe
-- `IHasContactInfo.cs` – interfejs do obsługi danych kontaktowych
+- `IDaneKontaktowe.cs` – interfejs do obsługi danych kontaktowych
 - `Przychodnia.accdb` – baza danych w formacie Access
 
 ---
@@ -40,7 +40,7 @@ Aplikacja desktopowa do zarządzania przychodnią weterynaryjną. Umożliwia pro
 | Element            | Zastosowanie                                                                 |
 |--------------------|------------------------------------------------------------------------------|
 | **Dziedziczenie**  | `Klient` i `LekarzWeterynarii` dziedziczą po klasie `Osoba`                  |
-| **Interfejsy**     | `IHasContactInfo` implementowany przez `Klient` i `Lekarz`                   |
+| **Interfejsy**     | `IDaneKontaktowe` implementowany przez `Klient` i `Lekarz`                   |
 | **Polimorfizm**    | Obsługa wspólnego interfejsu do wyświetlania kontaktów                      |
 | **Hermetyzacja**   | Wszystkie właściwości są `public` z `get; set;`                              |
 | **Biblioteki**     | `System.Data.OleDb`, `System.Windows.Forms`, `System.Collections.Generic`   |
